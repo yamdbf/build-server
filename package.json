@@ -1,0 +1,13 @@
+{
+  "name": "yamdbf-build-server",
+  "version": "0.1.0",
+  "description": "Builds and commits prebuilt yamdbf whenever indev commits are pushed",
+  "main": "server.js",
+  "author": "Zack Campbell <zajrik@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "github-build": "^1.0.2"
+  }
+}
