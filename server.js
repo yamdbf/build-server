@@ -21,12 +21,12 @@ server.post('/build/:id/:secret', (req, res) => {
 		return res.send({ status: 204, body: 'No changes.'});
 
 	const data = {
-		repo: 'zajrik/yamdbf',
+		repo: 'yamdbf/core',
 		sha: req.body.after,
 		token: config.token,
 		label: 'YAMDBF Prebuilt Build',
 		description: 'Building YAMDBF...',
-		url: `https://github.com/zajrik/yamdbf/tree/indev`
+		url: `https://github.com/yamdbf/core/tree/indev`
 	}
 
 	const build = new Build(data);
